@@ -1,0 +1,33 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "Classes to Google Calendar",
+  "description": "A chrome widget which adds your classes to your google calender.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtqqI25UsJyDyBLLfnsMn4IJpW2MDauCVibg0MGOr+tdwj1v6GjeKYouZTJgXv9h3aqS3UWJ0ZKBtDvqex78TT6aXV1+WI4bzDIzQ3PwQWFRV3TU1dtalpnEKK9RllvKnXv/Wjom+INlCEMZTCvd6YtOKG6ZxJDdsagJcZJxNwIA9phS/z5mQ3pvP4KbK8pzkpgzFTTOqWdMmeSnyaWb/ga6gw1O3kKxuZtAserbJ2hSlGV5slWe2ZDgfa4yxYhC22P+XyizFu/EK6xgsbUlmncvqHNgQqMLK4Uu+yBY07HCGhLIv6ywW6k9BckJW+FWjLNurJ44SgmTud+P4+BjbawIDAQAB",
+  "version": "1.1",
+
+  "browser_action": {
+   "default_popup": "popup.html"
+  },
+
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": false
+    },
+
+   "oauth2": {
+    "client_id": "650667499147-gm86dt4ni5c8q1maf0njfvbai9f6gn0n.apps.googleusercontent.com",
+    "scopes":["https://www.googleapis.com/auth/calendar"]
+  },
+
+
+	"permissions": [
+	      "identity",
+      "activeTab"
+    ]
+
+}
